@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Plag Analyser</string>
+    <string name="app_title">Plagarism Analyser</string>
+    <string name="enter_text_1">Enter Text 1:</string>
+</resources>
