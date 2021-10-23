@@ -3,25 +3,26 @@ package com.example.plaganalyser
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import kotlinx.coroutines.InternalCoroutinesApi
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var viewModel: WordViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         viewModel = ViewModelProvider(this).get(WordViewModel::class.java)
-//        viewModel = ViewModelProvider(
-//            this,
-//            ViewModelProvider.AndroidViewModelFactory.getInstance(application)
-//        ).get(WordViewModel::class.java)
+
+        findViewById<Button>(R.id.button).setOnClickListener { onSubmitButtonClick() }
     }
 
-    fun submitButtonClick(view: View){
+    fun onSubmitButtonClick(){
         val text1 = findViewById<EditText>(R.id.editText1).text.toString()
         val text2 = findViewById<EditText>(R.id.editText2).text.toString()
 
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Text can't be blank!!", Toast.LENGTH_SHORT).show()
         }
         else{
-            // The case when both the texts aren't empty
+            viewModel.onSubmit(text1, text2)
 
         }
     }

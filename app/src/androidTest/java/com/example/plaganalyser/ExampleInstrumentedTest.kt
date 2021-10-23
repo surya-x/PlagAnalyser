@@ -66,8 +66,8 @@ class WordDatabaseTest {
                 // Allowing main thread queries, just for testing.
                 .allowMainThreadQueries()
                 .build()
-        textDao = db.textDao
-        hashDao = db.hashDao
+        textDao = db.getTextDao()
+        hashDao = db.getHashDao()
     }
 
     @After

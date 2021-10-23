@@ -7,8 +7,8 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [TextTable::class, HashTable::class], version = 1, exportSchema = false)
 abstract class WordDatabase : RoomDatabase() {
-    abstract val textDao: TextDao
-    abstract val hashDao: HashDao
+    abstract fun getTextDao(): TextDao
+    abstract fun getHashDao(): HashDao
 
     // Companion: members  of this class can be called without instantiating the class
     companion object {

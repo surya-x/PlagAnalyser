@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
         android:text="Calculate"
-        android:onClick="submitButtonClick"
+        android:onClick="onSubmitButtonClick"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="parent"
