@@ -36,3 +36,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+/*
+* 1. Making it only alphanumeric in CalculatePlagiarism class
+* */
