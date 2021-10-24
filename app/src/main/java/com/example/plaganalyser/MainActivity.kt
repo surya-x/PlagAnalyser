@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(WordViewModel::class.java)
 
-        findViewById<Button>(R.id.button).setOnClickListener { onSubmitButtonClick() }
+//        findViewById<Button>(R.id.button).setOnClickListener { onSubmitButtonClick() }
     }
 
-    fun onSubmitButtonClick(){
+    fun onSubmitButtonClick(view: View){
         val text1 = findViewById<EditText>(R.id.editText1).text.toString()
         val text2 = findViewById<EditText>(R.id.editText2).text.toString()
 

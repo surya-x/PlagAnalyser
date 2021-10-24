@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 
-class WordViewModel(application: Application): ViewModel() {
+class WordViewModel(application: Application): AndroidViewModel(application)  {
 
     private val repository: WordRepository
     private val id1 = 1
