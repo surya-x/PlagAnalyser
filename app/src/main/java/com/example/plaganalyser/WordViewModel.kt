@@ -24,9 +24,8 @@ class WordViewModel(application: Application): AndroidViewModel(application)  {
 
         Log.d("DEBUG", repository.getText(1)[0])
         Log.d("DEBUG", repository.getText(2)[0])
+        val calculatePlagiarism = CalculatePlagiarism(text1, text2)
+        calculatePlagiarism.onCalculatePlagiarism()
     }
 
-    fun onCalculatePlagiarism(text1: String, text2: String){
-
-    }
 }
