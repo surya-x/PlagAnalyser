@@ -17,7 +17,6 @@ class WordViewModel(application: Application): AndroidViewModel(application)  {
         repository = WordRepository(textDao, hashDao)
     }
 
-//    fun onCalculatePlagiarism(text1: String, text2: String){}
     fun onSubmit(text1: String, text2: String) {
         // Inserting data into database
         repository.insertText(TextTable(id1, text1))
@@ -25,5 +24,9 @@ class WordViewModel(application: Application): AndroidViewModel(application)  {
 
         Log.d("DEBUG", repository.getText(1)[0])
         Log.d("DEBUG", repository.getText(2)[0])
+    }
+
+    fun onCalculatePlagiarism(text1: String, text2: String){
+
     }
 }

@@ -4,7 +4,7 @@ import androidx.room.*
 
 @Dao
 interface TextDao {
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertText(text: TextTable)
 
     @Delete
@@ -16,7 +16,7 @@ interface TextDao {
 
 @Dao
 interface HashDao {
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertHash(hash: HashTable)
 
     @Delete
