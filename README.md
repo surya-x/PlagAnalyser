@@ -1,7 +1,7 @@
 # PlagAnalyser
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/surya-x/PlagAnalyser/blob/main/LICENSE)
 
-PlagAnalyser is a android app which can be used to check Plagiarism between the given texts. It uses **Vector similarity method** to find the percentage of plagiarism between the texts. 
+PlagAnalyser is a android app which can be used to check Plagiarism between the given texts. It uses **Vector similarity metric** to find the percentage of plagiarism between the texts. 
 
 The idea is to create an app implementing a Plagiarism Algorithm on Android and using Architecture Components for learning. 
 
