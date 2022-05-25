@@ -6,10 +6,9 @@ PlagAnalyser is a android app which can be used to check Plagiarism between the 
 The idea is to create an app implementing a Plagiarism Algorithm on Android and using Architecture Components for learning. 
 
 The codebase focuses on following key things:
+- Kotlin
 - MVVM Architecture
 - Room Database (SQLite)
-- Dependency injection 🗡
-- Kotlin
 - Unit tests 🛠
 
 # Development Setup 🖥
