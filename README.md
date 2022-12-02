@@ -18,7 +18,7 @@ You will require latest version of Android Studio 3.0 (or newer) to be able to b
 
 ## Libraries and tools 🛠
 
-News App uses libraries and tools used to build Modern Android application, mainly part of Android Jetpack 🚀
+PlagAnalyser uses libraries and tools used to build Modern Android application, mainly part of Android Jetpack 🚀
 
 - [Kotlin](https://kotlinlang.org/) first
 - Architecture components
